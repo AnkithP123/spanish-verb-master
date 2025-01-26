@@ -44,7 +44,7 @@ const AddVerb: React.FC = () => {
       infinitive: newVerb.infinitive,
       meaning: newVerb.meaning,
       type: newVerb.type,
-      mastery: 0,
+      mastery: 0
     }
 
     if (newVerb.type === "irregular") {
@@ -144,7 +144,7 @@ const AddVerb: React.FC = () => {
             <div className="space-y-2">
               <Label>Stem Change</Label>
               <div className="flex items-center space-x-2">
-                <Input
+                {/* <Input
                   value={newVerb.stemChange.from}
                   onChange={(e) =>
                     setNewVerb({
@@ -154,16 +154,16 @@ const AddVerb: React.FC = () => {
                   }
                   placeholder="From (e.g., e)"
                   className="w-1/2"
-                />
+                /> */}
                 <Input
                   value={newVerb.stemChange.to}
                   onChange={(e) =>
                     setNewVerb({
                       ...newVerb,
-                      stemChange: { ...newVerb.stemChange, to: e.target.value },
+                      stemChange: { ...newVerb.stemChange, to: e.target.value, from: newVerb.infinitive.slice(0, -2) },
                     })
                   }
-                  placeholder="To (e.g., ie)"
+                  placeholder="New stem (part that goes before the ending)"
                   className="w-1/2"
                 />
               </div>
