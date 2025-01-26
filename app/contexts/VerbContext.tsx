@@ -96,7 +96,7 @@ export const VerbProvider: React.FC<{ children: React.ReactNode }> = ({ children
         { infinitive: "comprar", meaning: "to buy", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "vender", meaning: "to sell", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "beber", meaning: "to drink", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
-        { infinitive: "esquiar", meaning: "to ski", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
+        { infinitive: "usar", meaning: "to use", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "dibujar", meaning: "to draw", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "enseñar", meaning: "to teach", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "escuchar", meaning: "to listen", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
