@@ -44,7 +44,8 @@ const AddVerb: React.FC = () => {
       infinitive: newVerb.infinitive,
       meaning: newVerb.meaning,
       type: newVerb.type,
-      mastery: 0
+      mastery: 0,
+      masteredModes: { quiz: false, table: false, speech: false }
     }
 
     if (newVerb.type === "irregular") {
