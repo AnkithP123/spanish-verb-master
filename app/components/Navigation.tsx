@@ -12,7 +12,7 @@ type NavigationProps = {
 const Navigation: React.FC<NavigationProps> = ({ setCurrentPage, currentPage }) => {
   const navItems = [
     { name: "Dashboard", icon: Home, page: "dashboard" },
-    { name: "Verb List", icon: List, page: "verbos' },
+    { name: "Verb List", icon: List, page: "verblist" },
     { name: "Practice", icon: BookOpen, page: "practice" },
     { name: "Add Verb", icon: PlusCircle, page: "addverb" },
     { name: "Progress", icon: BarChart2, page: "progress" },
