@@ -71,7 +71,7 @@ export const VerbProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [verbs, setVerbs] = useState<Verb[]>([])
 
   useEffect(() => {
-    const storedVerbs = localStorage.getItem("verblist")
+    const storedVerbs = localStorage.getItem("verbos')
     if (storedVerbs) {
       setVerbs(JSON.parse(storedVerbs))
     } else {
@@ -87,7 +87,6 @@ export const VerbProvider: React.FC<{ children: React.ReactNode }> = ({ children
         { infinitive: "correr", meaning: "to run", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "leer", meaning: "to read", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "abrir", meaning: "to open", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
-        { infinitive: "cerrar", meaning: "to close", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "cocinar", meaning: "to cook", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "limpiar", meaning: "to clean", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
         { infinitive: "nadar", meaning: "to swim", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } },
@@ -108,14 +107,14 @@ export const VerbProvider: React.FC<{ children: React.ReactNode }> = ({ children
         { infinitive: "contestar", meaning: "to answer", type: "regular", mastery: 0, masteredModes: { quiz: false, table: false, speech: false } }
       ]
       setVerbs(initialVerbs)
-      localStorage.setItem("verblist", JSON.stringify(initialVerbs))
+      localStorage.setItem("verbos', JSON.stringify(initialVerbs))
     }
   }, [])
 
   const addVerb = (newVerb: Verb) => {
     setVerbs((prevVerbs) => {
       const updatedVerbs = [...prevVerbs, newVerb]
-      localStorage.setItem("verblist", JSON.stringify(updatedVerbs))
+      localStorage.setItem("verbos', JSON.stringify(updatedVerbs))
       return updatedVerbs
     })
   }
@@ -123,7 +122,7 @@ export const VerbProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const removeVerb = (infinitive: string) => {
     setVerbs((prevVerbs) => {
       const updatedVerbs = prevVerbs.filter((verb) => verb.infinitive !== infinitive)
-      localStorage.setItem("verblist", JSON.stringify(updatedVerbs))
+      localStorage.setItem("verbos', JSON.stringify(updatedVerbs))
       return updatedVerbs
     })
   }
@@ -139,7 +138,7 @@ export const VerbProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
         return verb
       })
-      localStorage.setItem("verblist", JSON.stringify(updatedVerbs))
+      localStorage.setItem("verbos', JSON.stringify(updatedVerbs))
       return updatedVerbs
     })
   }

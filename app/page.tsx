@@ -19,7 +19,7 @@ export default function App() {
         <Navigation setCurrentPage={setCurrentPage} currentPage={currentPage} />
         <main className="container mx-auto px-4 py-8">
           {currentPage === "dashboard" && <Dashboard />}
-          {currentPage === "verblist" && <VerbList />}
+          {currentPage === "verbos' && <VerbList />}
           {currentPage === "practice" && <Practice />}
           {currentPage === "addverb" && <AddVerb />}
           {currentPage === "progress" && <Progress />}
